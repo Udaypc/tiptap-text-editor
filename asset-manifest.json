@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tiptap-text-editor/static/css/main.cb1b5a32.css",
+    "main.js": "/tiptap-text-editor/static/js/main.1855947b.js",
+    "index.html": "/tiptap-text-editor/index.html",
+    "main.cb1b5a32.css.map": "/tiptap-text-editor/static/css/main.cb1b5a32.css.map",
+    "main.1855947b.js.map": "/tiptap-text-editor/static/js/main.1855947b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb1b5a32.css",
+    "static/js/main.1855947b.js"
+  ]
+}
