@@ -1,0 +1,10 @@
+.bgContainer{
+    display: flex;
+}
+@media screen and (max-width:440px) {
+    .bgContainer{
+        display: flex;
+        flex-direction:column;
+        
+    }
+}

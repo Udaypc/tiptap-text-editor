@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./tiptap.css"
 // TipTap
 import { useEditor, EditorContent} from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
@@ -27,14 +27,12 @@ export const Tiptap = () => {
 
   const[data,setData]=useState([{Title:"Example.title",Description:"Example.description"}]);
   const[title,setTitle]=useState("");
-  const[description]=useState(editor?.getText());
-  console.log(data);
 
   const onChangetitle=(e)=>{
       setTitle(e.target.value);
   };
   const submit=()=>{
-    setData([...data,{Title:title,Description:description}]);
+    setData([...data,{Title:title,Description:editor?.getText()}]);
   };
 
   
@@ -43,7 +41,7 @@ export const Tiptap = () => {
     return null;
   }
   return (
-    <div className='bg-black text-white h-screen font-serif flex'>
+    <div className='bg-black text-white h-screen font-serif  bgContainer'>
       <div className="w-5/6">
         <h1 className='text-center text-4xl pt-5 mb-5'>Tiptap Rich Text Editor</h1>
         <div className='flex flex-col ml-36'>
